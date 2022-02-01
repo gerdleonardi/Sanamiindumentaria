@@ -1,0 +1,39 @@
+.container{
+    margin-top: 30px;
+}
+
+.contact-network ul{
+    list-style: none;
+}
+.contact-network i{
+margin-right: 5px;
+color: #f36a3e;
+}
+
+.contact-network img{
+    margin-right: 5px;
+}
+
+.iconnet{
+    color: aquamarine;
+}
+
+.contact-network a{
+    text-decoration: none;
+    color: #040404;
+}
+
+.contact-item{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.btn-primary{
+color: #f36a3e;
+background-color: #040404;
+font-weight: bolder;
+width: 200px;
+font-size: 16px;
+float: right;
+margin-top: 20px;
+}
