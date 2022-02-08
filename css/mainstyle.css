@@ -186,13 +186,19 @@ nav a{
 }
 
 .main-categories-grid{
-    margin-top: 24px;
+    margin-top: 100px;
+    max-width: 1140px;
 }
 
 
 .main-categories-grid img:hover{
     filter: grayscale(100%);
     z-index: 5 ;
+}
+
+.main-categories-grid img{
+    width: 564px;  
+    height: auto; 
 }
 
 
@@ -218,22 +224,29 @@ nav a{
 }
 
 .product-container{
-   display: flex;
+   max-width: 100%;
+   height: 460px;
    margin-top: 18px;
-       
+   box-sizing: border-box;
+   justify-content: space-between;
+   margin-left: 0;
+   margin-right: 0;
+        
 }
 
-.box{
-	width:300px;
+.box-product{
+	width: 300px;
+    height: auto;
 	box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
 	border-radius: 5px;
 	overflow:auto;
-	margin: 35px;
-    background-color: #040400;
+	margin: 30px;
+    background-color: #040800;
 }
 .slide-img{
-	height: 300px;
+	height: 100%;
 	position:relative;
+    
 }
 .slide-img img{
 	width:100%;
@@ -255,23 +268,25 @@ nav a{
 	display: flex;
 	flex-direction: column;
 	text-align: center;
-   }
+}
+
 .type a{
 	color:#222222;
-	margin: 5px 0px;
 	font-weight: 700;
 	letter-spacing: 0.5px;
 	padding-right: 8px;
 }
 
-.type h3{
+.box-product p{
+    font-size: 24px;
     font-weight: bolder;
 }
 
 .type span{
 	color:#efefef;
-    margin-top: 5px;
     margin-bottom: 5px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
 }
 .price{
 	color: #333333;
@@ -321,7 +336,7 @@ nav a{
 
 .product-container .priv_arrow{
 position: absolute;   
-bottom: 55%;
+bottom: 50%;
 left:2%;
 color: #f36a3e;
 width: 50px;
@@ -340,7 +355,7 @@ z-index: 9999;
 
 .product-container .next_arrow{
     position: absolute;   
-    bottom: 55%;
+    bottom: 50%;
     right:2%;
     color: #f36a3e;
     width: 50px;
@@ -355,89 +370,223 @@ z-index: 9999;
 
 .destacados{
  margin-bottom: 30px;
+ margin-top: 30px;
+ padding: 0;
+}
+
+.destacados h2{
+    color: #f36a3e;
+    font-weight: bolder;
+    padding-bottom: 16px;
 }
 
 .back-img{
     position: absolute;
-    width: 100%;
-    height: 00px;
-    margin: auto;
-    image-resolution: 1600px;
-    margin-bottom: 30px;
+    height: 450px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-image: url(../Imagenes/portadacateg.jpg);
+    opacity: 0.5;
 }
 
-.img-back-destacado{
-    width: 100%;
-    height: 100%;
-    margin: auto;
-    object-fit: cover;
-    opacity: 0.2;
-    margin-bottom: 30px;
-}
-
-.category{
-    max-width: 1140px;
-    margin: auto;
-    margin-top: 50px;
+@media only screen and (min-width: 1400px){
+    
+    .product-container .next_arrow{
+        bottom: 40%;
+        right:1%;
+    }
+    .product-container .priv_arrow{
+        bottom: 40%;
+        left:1%;
+    }
+    .back-img{
+        height: 500px;
+    }
     
 }
 
-.category h2{
-    color: #f36a3e;
-    font-size: 32px;
-    font-weight:900;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.contacto{
-    max-width: 1280px;
-    margin: auto;
-}
-
-.links-section{
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.h6 h6{
-    font-size: 16px;
-}
-
-.h6{
-    vertical-align: baseline;
-    outline: 0;
-}
-
-.contacto a{
+.newsletter{
+    background-color: #040400;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    max-width: 1140px;
+    height: 200px;
     color: #f36a3e;
 }
 
-.row-fluid a{
-    color: #040400;
+.img-newsletter{
+    background-image: url(../Imagenes/pain.gif);
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.section-tittle{
-    font-weight: bold;
-    display: inline-block;
-    font-size: 16px;
-}
-
-.contacto-links{
-    background-color: #f36a3e;
-}
-
-.form-contacto{
-    background-color: #ff0000;
-}
-.containter-contact{
+.form-container{
     display: flex;
-    width: 100%;
-}
-.contacto-links{
-    display: table;
+    padding: 50px 50px 50px;
+    flex-direction: column;
 }
 
-.containter-contact ul li{
-    background-color: #ff0000;
+.form-input{
+display: flex;
+flex-direction: row;
+width: 100%;
+}
+
+.container-label {
+    flex-grow: 1;
+    max-width: 100%;
+    background-color: none;
+    
+}
+
+.container-label ::placeholder{
+    color: #777;
+    
+}
+
+.container-label input{
+    width: 100%;
+    height: 32px;
+    box-sizing: border-box;
+    padding: 10px;
+    }
+
+.container-btn input{
+    height: 32px;
+    border-radius: 0 0 1px 1px;
+    background-color: transparent;
+    color:#f36a3e;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 1px solid #efefef;
+}
+
+
+
+
+footer{
+    height: 200px;
+    
+    
+}
+
+.content-footer{
+    
+    background-color: #040400;
+    padding: 20px 10px;
+}
+
+.content-footer h5{
+    color: #efefef;
+}
+
+.copyright{
+    background-color: #222222;
+    height: 20%;
+    text-align: center;
+    color: #f36a3e;
+    
+}
+
+.copyright h6{
+text-align: center;
+margin-bottom: 0;
+}
+
+.mark-footer{
+    font-weight: bolder;
+}
+
+
+.content-footer figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content:start;
+    align-items: center;
+    padding-left: 90px;
+}
+.content-footer figure img{
+    width: 250px;
+}
+
+.nav-footer{
+    color: #efefef;
+    text-align:start;
+
+}
+.nav-footer ul{
+    list-style: none;
+    text-decoration: none;
+    color: #efefef;
+}
+
+.nav-footer a{
+    text-decoration: none;
+    color: #f36a3e;
+    font-size: 14px;
+    margin-bottom: 300px;
+}
+
+.nav-list{
+    padding-left: 0;
+}
+
+.contact-footer .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    font-size: 24PX;
+    line-height: 45px;
+    color: #f36a3e;
+    margin-right: 0;
+    background-color: transparent;
+    text-align: left;
+    transition: all 300ms ease;
+}
+
+.nav-footer .nav-list  a:hover{
+    color: aqua;
+}
+
+.contact-footer .red-social a:hover{
+    color: aqua;
+}
+
+@media only screen and (max-width: 576px){
+    .newsletter{
+        margin-top: 40px;
+        margin-bottom: 30px;              
+    }
+    .img-newsletter{
+        visibility: hidden;
+    }
+    .content-footer figure{
+        justify-content: center;
+        padding-left: 0px;
+        padding-bottom: 20px;
+    }
+
+    .nav-footer{
+        text-align: center;
+    }
+
+    .contact-footer{
+        text-align: center;
+    }
+
+    .main-categories-grid{
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (min-width: 1900px){
+        .content-footer figure{
+            padding-left: 360px;
+            
+        }
 }
