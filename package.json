@@ -1,0 +1,26 @@
+{
+  "name": "instlaacion-saas",
+  "version": "1.0.0",
+  "description": "proyecto ecommerce indumentaria anime para curso coderhouse",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/style.scss css/main.css",
+    "watch-sass": "nodemon -e scss -x \"npm run build-css\""
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gerdleonardi/sanamiindumentaria.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gerdleonardi/sanamiindumentaria/issues"
+  },
+  "homepage": "https://github.com/gerdleonardi/sanamiindumentaria#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15"
+  }
+}
