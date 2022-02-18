@@ -1,0 +1,57 @@
+/* colores */
+
+$colores: (
+primario: #f36a3e,
+secundario: #040400,
+bg: #fff,
+);
+
+
+
+
+
+$fontweight:
+normal,  /*1*/
+bolder,   /*2*/
+lighter;  /*3*/
+
+
+
+/* Extends */
+
+%Breadcrumb{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    justify-items: center;
+    margin: 0;
+}
+/* Extends */
+
+@mixin mediaQuery ($diseñoPantalla) {
+    @if $diseñoPantalla == mobile{
+        @media only screen and (max-width: 576px) {
+            @content;
+        }
+    }
+    @else if $diseñoPantalla == tablet{
+        @media only screen and (min-width: 900px) {
+            @content;
+        }
+    }
+    
+    @else if $diseñoPantalla == tabletL{
+        @media only screen and (min-width: 1400x) {
+            @content;
+        }
+    }
+
+    @else  {
+        @media only screen and (min-width: 1900x) {
+            @content;
+        }
+    }
+
+
+}

@@ -1,0 +1,7 @@
+Cambio de titulos en todas las paginas
+Agregado de icono en pestaña
+Agregado de keywords en todas los html relacionados a indumentaria y anime
+Agregado de description especifico para cada html 
+Agregado de los alt text en las imagenes
+Categorizacion de los titulos
+Agregado del xml de las categorias

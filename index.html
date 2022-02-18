@@ -4,13 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sanami indumentaria</title>
+    <link rel="icon" href="./Imagenes/LOGO- German DLeonardi.png" type="">
+    <!--SEO; description - keywords-->
+    <meta name="keywords" content="anime, indumentaria jove, naruto, dragon ball, kimetsu no yaiba, remeras, buzos, moda ">
+    <meta name="description" content="Sanami es un negocio que se basa en la producción/venta de buzos, remeras y camperas personalizadas de animes. 
+    Utilizando como método la sublimación textil en maquinaria preparada para producir en masa."> 
+
     <!--Tipografia-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,300&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,300&display=swap" rel="stylesheet"> 
+    <!--Tipografia-->
+    <script src="https://kit.fontawesome.com/ce5b5a33f9.js" crossorigin="anonymous"></script>
 
-<script src="https://kit.fontawesome.com/ce5b5a33f9.js" crossorigin="anonymous"></script>
 <!--Link slider css-->
 <link rel="stylesheet" href="./css/slick.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
@@ -19,7 +26,10 @@
 
 
 <!--Link css-->    
+
+
 <link rel="stylesheet" href="./css/mainstyle.css">
+<link rel="stylesheet" href="./css/main.css">
 
 </head>
 <body>
@@ -27,7 +37,7 @@
         <div class="nav">
             <div class="navlogo">
              <a href="/index.html">
-                 <img class="navlogo" src="./Imagenes/logohead.png" alt="">
+                 <img class="navlogo" src="./Imagenes/logohead.png" alt="Logo encabezado de Sanami Indumentaria">
              </a>
             </div>
             <div class="search">
@@ -36,10 +46,10 @@
                      <i class="fas fa-search"></i>
                  </button>
                  <a href="">
-                     <img class="img-nav" src="./Imagenes/shopcart.png" alt="">
+                     <img class="img-nav" src="./Imagenes/shopcart.png" alt="icono carro de compra">
                  </a>
                  <a href="">
-                     <img class="img-nav" src="./Imagenes/useravatar.png" alt="">
+                     <img class="img-nav" src="./Imagenes/useravatar.png" alt="icono de cuenta de usuario">
                  </a>
              </div>           
        </div>
@@ -55,8 +65,16 @@
             <div class="navbar-nav">
               <a class="nav-link"  href="./index.html">HOME</a>
               <a class="nav-link" href="./Paginas/novedades.html">NOVEDADES</a>
-              <a class="nav-link" href="./Paginas/productos">PRODUCTOS</a>
-              <a class="nav-link" href="#">SOBRE NOSOTROS</a>
+              <div class="dropdown">
+                <a class="dropbtn nav-link" href="./Paginas/productos.html">PRODUCTOS</a>
+                <div class="dropdown-content">
+                    <a  class="subcat" href="">NIÑOS</a>
+                    <a  class="subcat" href="">HOMBRES</a>
+                    <a  class="subcat" href="">MUJERES</a>
+                </div>
+              </div>
+              
+              <a class="nav-link" href="./Paginas/sobrenos.html">SOBRE NOSOTROS</a>
               <a class="nav-link" href="./Paginas/contacto.html">CONTACTO</a>
               
             </div>
@@ -69,17 +87,17 @@
     <section>
         <div class="contenedorImgen">
             <a href="" class="main-image">
-                <img class="img-fluid portada" src="./Imagenes/PORTADA1.jpg" alt="">
+                <img class="img-fluid portada" src="./Imagenes/PORTADA1.jpg" alt="Imagen portada Sanami Indumentaria">
             </a>
         </div>
         <div class="container main-categories-grid">
             <div class="row categories">
                 <div class="col-lg-6 col-sm-12 grid-item1">
                     <a href="">
-                        <img src="./Imagenes/ab3486ad96e9f28fedc104bb6c2268b2.jpg" class="img-fluid" alt="">
+                        <img src="./Imagenes/ab3486ad96e9f28fedc104bb6c2268b2.jpg" class="img-fluid" alt="Portada de categoria de Novedades Sanami indumentaria">
                         <div class="title-section">
-                            <h2>novedades</h2>
-                            <h3></h3>
+                            <h3>novedades</h3>
+                            
                            <p>VER MÁS ></p>
                        </div> 
                     </a>
@@ -87,10 +105,10 @@
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 grid-item2">
                     <a href="">
-                        <img src="./Imagenes/Mockup-naruto.jpg" class="img-fluid" alt="">
+                        <img src="./Imagenes/Mockup-naruto.jpg" class="img-fluid" alt="Portada de categoria de Productos Sanami indumentaria">
                        <div class="title-section">
-                           <h2>productos</h2>
-                           <h3></h3>
+                           <h3>productos</h3>
+                           
                            <p>VER MÁS ></p>
                       </div> 
                     </a>
@@ -112,7 +130,7 @@
             <div class="box-product">
                 <!--img-box---------->
                 <div class="slide-img">
-                <img src="./Imagenes/1.jpg" alt="4">
+                <img src="./Imagenes/1.jpg" alt="Imagen 1">
                 <!--overlayer---------->
                 <div class="overlay">
                 <!--buy-btn------>	
@@ -133,7 +151,7 @@
             <div class="box-product">
                 <!--img-box---------->
                 <div class="slide-img">
-                <img src="./Imagenes/2.jpg" alt="4">
+                <img src="./Imagenes/2.jpg" alt="Imagen 2">
                 <!--overlayer---------->
                 <div class="overlay">
                 <!--buy-btn------>	
@@ -154,7 +172,7 @@
             <div class="box-product">
                 <!--img-box---------->
                 <div class="slide-img">
-                <img src="./Imagenes/3.jpg" alt="4">
+                <img src="./Imagenes/3.jpg" alt="Imagen 3">
                 <!--overlayer---------->
                 <div class="overlay">
                 <!--buy-btn------>	
@@ -175,7 +193,7 @@
             <div class="box-product">
                 <!--img-box---------->
                 <div class="slide-img">
-                <img src="./Imagenes/4.jpg" alt="4">
+                <img src="./Imagenes/4.jpg" alt="Imagen 4">
                 <!--overlayer---------->
                 <div class="overlay">
                 <!--buy-btn------>	
@@ -196,7 +214,7 @@
             <div class="box-product">
                 <!--img-box---------->
                 <div class="slide-img">
-                <img src="./Imagenes/5.jpg" alt="4">
+                <img src="./Imagenes/5.jpg" alt="Imagen 5">
                 <!--overlayer---------->
                 <div class="overlay">
                 <!--buy-btn------>	
@@ -217,7 +235,7 @@
             <div class="box-product">
                 <!--img-box---------->
                 <div class="slide-img">
-                <img src="./Imagenes/6.jpg" alt="4">
+                <img src="./Imagenes/6.jpg" alt="Imagen 6">
                 <!--overlayer---------->
                 <div class="overlay">
                 <!--buy-btn------>	
@@ -238,7 +256,7 @@
             <div class="box-product">
                 <!--img-box---------->
                 <div class="slide-img">
-                <img src="./Imagenes/6.jpg" alt="4">
+                <img src="./Imagenes/6.jpg" alt="Imagen 7">
                 <!--overlayer---------->
                 <div class="overlay">
                 <!--buy-btn------>	
@@ -259,7 +277,7 @@
             <div class="box-product">
                 <!--img-box---------->
                 <div class="slide-img">
-                <img src="./Imagenes/6.jpg" alt="4">
+                <img src="./Imagenes/6.jpg" alt="Imagen 8">
                 <!--overlayer---------->
                 <div class="overlay">
                 <!--buy-btn------>	
