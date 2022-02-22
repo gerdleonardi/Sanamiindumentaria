@@ -5,21 +5,88 @@
    
 }
 
-.Breadcrumb{
-    margin: 16px 16px;
+.main-Breadcrum{
+    max-width: 1280px;
 
-    .links-section{
-        @extend %Breadcrumb;
-        .Index-link{
-            font-weight: bolder;
+    .Breadcrumb{
+        margin: 16px 0;
+    
+        .links-section{
+            @extend %Breadcrumb;
+            .Index-link{
+                font-weight: bolder;
+            }
+           p{color: map-get($colores , primario );}
         }
-       p{color: map-get($colores , primario );}
+    
     }
-
 }
 
+.main-about{
+    max-width: 1280px;
+
+    .body-main{
+        height: 500px;
+        padding-top: 30px;
+
+        .p-inicial{
+            padding-top: 16px;
+        }
+
+        .body-img{
+            width: 500px;}
+        
+    }   
+    h1{
+        margin-top: 50px;
+        font-weight: bolder;
+        color: map-get($colores , primario );
+        margin-bottom: 50px;
+    }
+}
+
+.align-items-center{
     
-    
-    
+
+    .cuerpo-texto.center{
+        display: flex;
+        justify-content: center;
+        
+    }
+}
+
+.body-text{
+    font-size: 32px;
+    font-weight: lighter;
+}
+
+.marco-body{
+    padding: 10px;
+    background-color: rgba(233, 233, 233, 0.933);
+    margin-bottom: 50px;
+    box-sizing: border-box;
+    box-shadow: 5px 10px 12px -1px #35293A;
+    color: map-get($colores , primario );
+}
+
+@include mediaQuery (mobile){
+    .body-img{
+        visibility: hidden;
+        position: absolute;
+    }
+    .body-text{
+        font-size: 24px;
+        font-weight: normal;
+        
+        color: map-get($colores , primario );
+        text-align: center;
+        
+    }
+    .marco-body{
+        margin-bottom: 20px;
+        background-color: map-get($colores , secundario );
+    }
+}
+
 
 
