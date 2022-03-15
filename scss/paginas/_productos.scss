@@ -1,1 +1,112 @@
 @import "./sobrenos";
+
+
+.rating .tick {
+    font-size: 0.9rem;
+    
+}
+
+.rating .fas.fa-star {
+    color: #ffbb00;
+    padding: 0px 3px
+}
+
+.body-products{
+    max-width: 1140px;
+    margin-top: 30px;
+    font-size: 12px;
+    
+}
+
+.main-Breadcrum{
+    max-width: 1140px;
+    padding-left: 0;
+}
+
+/***filter*///
+.box{
+    text-align: start;
+    margin-bottom: 30px;
+}
+
+
+.filter-list {
+    list-style: none;
+    padding-left: 0;
+    
+}
+
+.filter-list > li {
+    margin-bottom: 8px;
+    
+    
+}
+
+.price-range{
+    display: flex;
+    align-items: center;
+       
+}
+
+.price-range span{
+    margin: 0 10px;
+}
+
+.price-range input{
+    width: 30%;
+    outline: none;
+    padding: 2px;
+}
+
+.filter-header{
+    font-weight: bolder;
+    display: block;
+    margin-bottom: 16px;
+}
+
+.form-check-input:checked{
+    background-color: #000;
+    border-color: map-get($colores , primario );
+}
+
+.box input{
+    margin-right: 25px;
+}
+
+.row-product{
+    margin-bottom: 30px;
+}
+
+.product-box{
+    max-width: 100%;
+    margin: 0;
+}
+.card-product{
+    margin-bottom: 3%;
+}
+
+.page-link ,.next,.disabled{
+    color: map-get($colores ,secundario );
+    font-weight: bolder;
+    border-color: map-get($colores , primario );
+}
+
+@include mediaQuery (mobile){
+
+    .filters{
+        visibility: hidden;
+        position:absolute;
+    }
+
+    .card-product{
+        display: flex;
+        justify-content: center;          
+    }
+    .slide-img{
+        height: auto;
+    }
+    .p7{
+        visibility: hidden;
+        position: absolute;
+    }
+}

@@ -44,12 +44,11 @@
   justify-content: center; }
 
 .body-text {
-  font-size: 32px;
+  font-size: 24px;
   font-weight: lighter; }
 
 .marco-body {
   padding: 10px;
-  background-color: rgba(233, 233, 233, 0.933);
   margin-bottom: 50px;
   box-sizing: border-box;
   box-shadow: 5px 10px 12px -1px #35293A;
@@ -102,12 +101,11 @@
   justify-content: center; }
 
 .body-text {
-  font-size: 32px;
+  font-size: 24px;
   font-weight: lighter; }
 
 .marco-body {
   padding: 10px;
-  background-color: rgba(233, 233, 233, 0.933);
   margin-bottom: 50px;
   box-sizing: border-box;
   box-shadow: 5px 10px 12px -1px #35293A;
@@ -125,6 +123,86 @@
   .marco-body {
     margin-bottom: 20px;
     background-color: #040400; } }
+
+.rating .tick {
+  font-size: 0.9rem; }
+
+.rating .fas.fa-star {
+  color: #ffbb00;
+  padding: 0px 3px; }
+
+.body-products {
+  max-width: 1140px;
+  margin-top: 30px;
+  font-size: 12px; }
+
+.main-Breadcrum {
+  max-width: 1140px;
+  padding-left: 0; }
+
+/***filter*/
+.box {
+  text-align: start;
+  margin-bottom: 30px; }
+
+.filter-list {
+  list-style: none;
+  padding-left: 0; }
+
+.filter-list > li {
+  margin-bottom: 8px; }
+
+.price-range {
+  display: flex;
+  align-items: center; }
+
+.price-range span {
+  margin: 0 10px; }
+
+.price-range input {
+  width: 30%;
+  outline: none;
+  padding: 2px; }
+
+.filter-header {
+  font-weight: bolder;
+  display: block;
+  margin-bottom: 16px; }
+
+.form-check-input:checked {
+  background-color: #000;
+  border-color: #f36a3e; }
+
+.box input {
+  margin-right: 25px; }
+
+.row-product {
+  margin-bottom: 30px; }
+
+.product-box {
+  max-width: 100%;
+  margin: 0; }
+
+.card-product {
+  margin-bottom: 3%; }
+
+.page-link, .next, .disabled {
+  color: #040400;
+  font-weight: bolder;
+  border-color: #f36a3e; }
+
+@media only screen and (max-width: 576px) {
+  .filters {
+    visibility: hidden;
+    position: absolute; }
+  .card-product {
+    display: flex;
+    justify-content: center; }
+  .slide-img {
+    height: auto; }
+  .p7 {
+    visibility: hidden;
+    position: absolute; } }
 
 body {
   position: relative;
@@ -394,3 +472,17 @@ footer {
 
 .whatsapp-icon {
   margin-top: 13px; }
+
+.body-noveds {
+  max-width: 1140px;
+  margin-top: 30px; }
+
+.giffinal {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px; }
+
+.giffinal img {
+  max-width: 500px;
+  height: auto;
+  border-radius: 5px; }
